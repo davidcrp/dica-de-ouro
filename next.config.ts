@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  images: {
+    remotePatterns: [
+      { hostname: 'dica-de-ouro.github.io' },
+      { hostname: 'qwwncqvdzpzmgntxkulu.supabase.co' },
+      { hostname: 'maps.googleapis.com' },
+    ],
+  },
+}
 
-export default nextConfig;
+export default nextConfig
